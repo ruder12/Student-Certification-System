@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="717.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modules.StudentController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="100.0" prefWidth="718.0" style="-fx-background-color: #e20613;">
+         <children>
+            <Text fill="WHITE" layoutX="235.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro Estudiantes" textAlignment="CENTER" wrappingWidth="221.000005453825">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Text>
+            <MaterialDesignIconView fx:id="closeIcon" fill="WHITE" glyphName="CLOSE" layoutX="677.0" layoutY="33.0" onMouseClicked="#closeStage" size="22.0" />
+         </children>
+      </Pane>
+      <JFXComboBox fx:id="comboCourse" focusColor="#0081ff" labelFloat="true" layoutX="394.0" layoutY="237.0" prefHeight="31.0" prefWidth="246.0" promptText="Codigo Curso" />
+      <JFXButton fx:id="btnSaveStudent" buttonType="RAISED" centerShape="false" layoutX="374.0" layoutY="419.0" onAction="#saveStudent" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: #e20613;" text="Save Student" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#eee9e9" glyphName="CHECK" size="20" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnViewAll" buttonType="RAISED" layoutX="140.0" layoutY="419.0" onAction="#viewAllStudents" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #2E86C1; -fx-padding: 0 0 0 20;" text="Ver Tabla" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#f5efef" fontSmoothingType="LCD" glyphName="TABLE" size="20" />
+         </graphic>
+      </JFXButton>
+      <HBox alignment="BOTTOM_CENTER" fillHeight="false" layoutX="448.0" layoutY="252.0" spacing="5.0" />
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="122.0" prefHeight="14.0" prefWidth="692.0" spacing="2.0">
+         <children>
+            <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #2E86C1; -fx-min-height: 4; -fx-pref-height: 4;" />
+            <Circle fill="#e8e9eb" radius="7.0" stroke="#f21318" strokeType="INSIDE" strokeWidth="3.0" />
+            <Label prefHeight="4.0" prefWidth="283.0" style="-fx-background-color: #2E86C1; -fx-min-height: 4; -fx-pref-height: 4;" />
+            <Circle fill="#e8e9eb" radius="7.0" stroke="#f21313" strokeType="INSIDE" strokeWidth="3.0" />
+            <Label prefHeight="4.0" prefWidth="130.0" style="-fx-background-color: #2E86C1; -fx-min-height: 4; -fx-pref-height: 4;" />
+         </children>
+      </HBox>
+      <JFXTextField fx:id="txtDI" focusColor="#0081ff" labelFloat="true" layoutX="394.0" layoutY="179.0" prefHeight="31.0" prefWidth="246.0" promptText="Documento Identidad">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="#0081ff" labelFloat="true" layoutX="61.0" layoutY="179.0" prefHeight="31.0" prefWidth="246.0" promptText="Nombre Estudiante">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCorreo" focusColor="#0081ff" labelFloat="true" layoutX="61.0" layoutY="237.0" prefHeight="31.0" prefWidth="246.0" promptText="Correo">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="labelError" layoutX="82.0" layoutY="331.0" prefHeight="38.0" prefWidth="524.0" textFill="#d70404">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

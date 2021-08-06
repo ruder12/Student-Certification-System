@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modules.MainEmailController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="130.0" prefWidth="694.0" style="-fx-background-color: #e20613;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="615.0" text="Enviar Correos" textAlignment="CENTER" textFill="#f8f4f4">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fx:id="closemail" accessibleRole="IMAGE_VIEW" fill="#fcfcfc" glyphName="CLOSE" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#closeStage" size="30" textAlignment="CENTER" wrappingWidth="42.0" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="325.0" prefWidth="694.0" style="-fx-background-color: #FBFBFB;">
+               <children>
+                  <JFXComboBox fx:id="comboCurso" labelFloat="true" layoutX="14.0" layoutY="22.0" prefHeight="33.0" prefWidth="312.0" promptText="Seleccione un Curso" />
+                  <Label fx:id="labeldatos" layoutX="72.0" layoutY="71.0" lineSpacing="2.0" prefHeight="33.0" prefWidth="481.0" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <JFXButton fx:id="enviarAll" buttonType="RAISED" layoutX="530.0" layoutY="271.0" onAction="#Enviar" prefHeight="40.0" prefWidth="134.0" ripplerFill="#0e3de8" style="-fx-background-color: #2E86C1;" text="Enviar Correo" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIconView fill="#edecf2" glyphName="SEND" size="25" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIconView fx:id="buscar" fill="#464545" glyphName="SEARCH" layoutX="335.0" layoutY="46.0" onMousePressed="#consultar" size="25" wrappingWidth="24.999997079372406" />
+                  <Label layoutX="26.0" layoutY="234.0" prefHeight="74.0" prefWidth="448.0" text="Sr/a Usuario por favor Seleccione Cuidadosamente el Curso al cual le desea enviar su Certificacion" textFill="#868484" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="503.0" fill="#403f3f" layoutX="173.0" layoutY="132.0" startX="-156.0" stroke="#e20613" strokeWidth="5.0" />
+                  <Label fx:id="labelmensaje" alignment="CENTER" layoutX="98.0" layoutY="166.0" prefHeight="47.0" prefWidth="496.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="txtaño" labelFloat="true" layoutX="369.0" layoutY="25.0" prefHeight="25.0" prefWidth="72.0" promptText="Año" />
+                  <JFXComboBox fx:id="txtmes" labelFloat="true" layoutX="457.0" layoutY="26.0" prefHeight="25.0" prefWidth="59.0" promptText="Mes" />
+                  <JFXComboBox fx:id="diploma" labelFloat="true" layoutX="541.0" layoutY="26.0" prefHeight="25.0" prefWidth="141.0" promptText="Diploma" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

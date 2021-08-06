@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GekoStudent.MainController">
+   <children>
+      <Pane fx:id="popUpHolder" prefHeight="600.0" prefWidth="1050.0" styleClass="login-card" stylesheets="@style.css" />
+      <ImageView fitHeight="650.0" fitWidth="1109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FONDO1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox fx:id="groupRegistrarCargar" layoutX="550.0" layoutY="161.0" prefHeight="328.0" prefWidth="114.0" spacing="8.0">
+               <children>
+                  <AnchorPane fx:id="menuStudent" onMouseClicked="#showStudent" prefHeight="164.0" prefWidth="116.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono8.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="16.0" layoutY="98.0" prefHeight="52.0" prefWidth="98.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="20.0" prefWidth="96.0" text="Registrar " textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiantes" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="menuCargarExcel" onMouseClicked="#showCompanies" prefHeight="157.0" prefWidth="60.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono1.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="8.0" layoutY="94.0" prefHeight="50.0" prefWidth="114.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cargar" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excel" textAlignment="CENTER" wrappingWidth="102.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children></VBox>
+            <VBox fx:id="groupReports" layoutX="396.0" layoutY="134.0" spacing="8.0">
+               <children>
+                  <AnchorPane fx:id="menuReports" onMouseClicked="#showReports" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono3.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="14.0" layoutY="96.0" prefHeight="50.0" prefWidth="103.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generar" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Diploma" textAlignment="CENTER" wrappingWidth="98.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="menuCourse" onMouseClicked="#showCourse" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono5.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="14.0" layoutY="96.0" prefHeight="50.0" prefWidth="103.0">
+                           <children>
+                              <Label text="Registrar">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cursos" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox fx:id="groupAbout" layoutX="713.0" layoutY="191.0" spacing="8.0">
+               <children>
+                  <AnchorPane fx:id="menuDatabase" onMouseClicked="#showBackUps" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono6.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Config" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="menuAbout" onMouseClicked="#showAbout" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/about.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datos del Sistema" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox fx:id="groupcorreos" layoutX="238.0" layoutY="175.0" spacing="8.0">
+               <children>
+                  <AnchorPane fx:id="menuEnviarMail" onMouseClicked="#showenviarEmail" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono2.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enviar " textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Correo" textAlignment="CENTER" wrappingWidth="98.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="menuConfig" prefHeight="160.0" prefWidth="130.0" styleClass="menus" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icono7.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" layoutX="3.0" layoutY="101.0" prefHeight="50.0" prefWidth="122.0">
+                           <children>
+                              <Label text="Informes">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="89.13671875">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
