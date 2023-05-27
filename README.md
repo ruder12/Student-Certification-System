@@ -3,7 +3,7 @@ Genera mas de Dos mil Certificados o diplomas en minutos
 
 ## GekoStudent
 <ul>
-<li>Registra mas 2.000 registros Cargados desde un Archivo Excel</li>
+<li>Gestiona mas 2.000 registros Cargados desde un Archivo Excel</li>
 <li>Genera la Misma cantida (2.000) de Certificaciones o Diplomas para cada estudiante Ingresado</li>
 <li>Administra los Curso Realizados</li>
 <li>Se envia Automaticamente a Cada Estudiante Registrado en el sistema y autorizado para Recibir la Certificacion</li>
